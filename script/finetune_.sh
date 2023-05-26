@@ -1,0 +1,14 @@
+python ../finetune_.py \
+    --train_path "../data/train.txt" \
+    --dev_path "../data/dev.txt" \
+    --save_dir "../checkpoint/uie_m_base" \
+    --learning_rate 1e-5 \
+    --batch_size 32 \
+    --max_seq_len 128 \
+    --num_epochs 6 \
+    --model "../uie_m_base_pytorch" \
+    --seed 1000 \
+    --logging_steps 10 \
+    --valid_steps 40000 \
+    --device "gpu" \
+    --select_gpu 1 
